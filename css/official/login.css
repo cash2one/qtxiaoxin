@@ -1,0 +1,207 @@
+/**
+ * 
+ * @authors H君 (26228161@qq.com)
+ * @date    2014-11-27 14:10:58
+ * @version $Id$
+ */
+
+/************************************************************************************
+header
+*************************************************************************************/
+body{
+	background: #fff;
+	padding-bottom: 20px;
+}
+.header-config{
+	padding:20px 0;
+	/*padding:136px 0 20px;*/
+}
+.header{
+	height: 41px;
+	position: relative;
+	width:906px;
+	margin:0 auto;
+}
+.header .logo{
+	color: #909090;
+	font-size:18px;
+}
+.header .logo img{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.header .logo span{
+	padding-top:10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.header .login-status{
+	position: absolute;
+	top:14px;
+	right:0;
+}
+
+/************************************************************************************
+center content
+*************************************************************************************/
+.container{
+	background: #00ABA9;
+}
+.container .content{
+	width:906px;
+	margin:0 auto;
+	background:#00ABA9 url('/image/official/login/app-pic.jpg') no-repeat 0 100%;
+	height:521px;
+	position: relative;
+	color:#fff;
+}
+.container .content .tip{
+	position: absolute;
+	top:80px;
+	left:30px;
+}
+.container .content .tip h1{
+	font-size: 36px;
+	font-weight: normal;
+}
+.container .content .tip p{
+	font-size: 18px;
+	margin-top:10px;
+}
+.container .content .login{
+	width: 254px;
+	height: 360px;
+	border-radius: 8px;
+	background: #EAFFFF;
+	position: absolute;
+	top:56px;
+	right: 0;
+	padding:30px 20px 20px;
+	color:#999;
+	overflow: hidden;
+}
+.container .content .login .tit{
+	font-size: 18px;
+	color: #333;
+}
+.container .content .login .control-group{
+	margin-top: 20px;
+}
+.container .content .login  .user input,.container .content .login  .pass input{
+	width: 204px;
+	padding-left: 38px;
+}
+.container .content .login  .user{
+	position: relative;
+}
+.container .content .login  .user input{
+	background:#fff url('/image/official/login/icon1.png') no-repeat 10px; center;
+}
+.container .content .login  .pass input{
+	background:#fff url('/image/official/login/icon2.png') no-repeat 10px; center;
+}
+.container .content .login  .user span,.container .content .login  .pass span{
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	display: block;
+	padding: 8px 6px;
+	background: red;
+	text-indent: -9999px;
+	background:url('/image/official/login/icon1.png') no-repeat 10px; center;
+}
+.container .content .login  .pass span{
+	background:url('/image/official/login/icon2.png') no-repeat 10px; center;
+}
+
+
+.container .content .login .forget{
+	color:#666;
+	margin-top: 10px;
+}
+.container .content .login .forget-btn{
+	margin-left: 115px;
+	color:#666;
+}
+.container .content .login .controls{
+	margin-left: 0;
+	position: relative;
+}
+.error{
+	color: #ED3931;
+}
+.container .content .login .login-btn{
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	padding:10px;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+/************************************************************************************
+找回密码
+*************************************************************************************/
+.container .content .find-pass  .user{
+	font-size: 0;
+	position: relative;
+}
+.container .content .find-pass  .user input,.container .content .find-pass  .pass input{
+	background:#fff none;
+	padding-left: 5px;
+	font-size: 12px;
+	width: 241px;
+	line-height: 20px;
+	height: 20px;
+	vertical-align: bottom;
+}
+.container .content .find-pass  .user span,.container .content .find-pass  .pass span{
+	background:none;
+}
+.container .content .find-pass  .getpass{
+	width: 104px;
+	display: inline-block;
+	padding:8px 5px;
+	text-align: center;
+	font-size: 13px;
+	position: absolute;
+	border-bottom:none;
+	top:0;
+	right: 0;
+	*margin-top: 1px;
+	background: #00ABA9;
+	color: #fff;
+	border:1px solid #ccc;
+
+}
+.container .content .find-pass .getpass-tip{
+	text-align: right;
+	margin-top: 15px;
+}
+.container .content .find-pass .return-login{
+	color:#00ABA9;
+	text-decoration: underline;
+}
+
+/************************************************************************************
+footer
+*************************************************************************************/
+.footer{
+	width:906px;
+	margin:0 auto;
+	padding:20px 0;
+	text-align: right;
+	font-size: 0;
+	position: relative;
+}
+.footer a{
+	color:#999;
+	font-size: 14px;
+	margin-left:15px;
+	display:inline-block; 
+}
+.footer  .foot-logo{
+	position: absolute;
+	top:20px;
+	left:0;
+}

@@ -1,0 +1,39 @@
+/* 
+    color:read;  
+    Created on : 2014-8-8, 10:24:33
+    Author     : owen
+*/
+.infoTitle{ color: #E95B5F;}
+.btn-raed {color: #ffffff; background-color: #E95B5F; border-color: #E95B5F; } 
+.btn-raed:hover, .btn-raed:focus {color: #ffffff; background-color: #cc3333; text-decoration: none; background-position: 0 -15px;-webkit-transition: background-position .1s linear; }
+
+.layoutBodyBox{ background-color: #f9f9f7; }
+.subnavBox{ background: #E95B5F; } 
+.borderBottom{border-bottom: 1px solid #DE2D2F;}
+.borderTop{border-top:1px solid #f0767c;} 
+
+.menuList li a:hover{ background-color: #ffffff; color: #E95B5F; }
+.menuList li a.focus{ background-color: #ffffff; color: #E95B5F;}
+.menuList li a em{background:url('/image/xiaoxin/muen_navico.png') no-repeat;}
+.menuList li a i{background:url('/image/xiaoxin/muen_list_ico.png') no-repeat;}
+.headNav li a { color: #999999; }
+.headNav li a.focus{border-bottom: 3px solid #E95B5F; color: #333333; }
+.headNav li a:hover{border-bottom: 3px solid #efa8aa; color: #333333; }
+.headNav li a.focus:hover{border-bottom: 3px solid #E95B5F; color: #333333; }
+
+.userInfo a{ color: #fbe4e5;  }
+.userInfo a.focus{color: #E95B5F;}
+.userInfo a:hover{ text-decoration: underline; }
+
+.classTableBox .classInfoTitle{ color: #E95B5F;}
+
+/*//文件上传按钮背景图片*/
+.uploadify-button{
+    background: url('/image/xiaoxin/feilBtnBg.jpg') center;
+}
+.uploadify:hover .uploadify-button{
+     width: 100px;
+     height: 30px;
+     background: url('/image/xiaoxin/feilBtnBg.jpg') center;
+     opacity: 0.8;
+}

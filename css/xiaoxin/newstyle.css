@@ -1,0 +1,229 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding:0;}
+img {border:none;}
+ul, ol{list-style:none;}
+table{border-collapse:collapse;}
+input{vertical-align:middle;}
+html{width: 100%;height: 100% !important;}
+body{font:12px/24px "宋体", Arial, "Lucida Grande", Verdana, Lucida, Helvetica, sans-serif; color:#666;width: 100%; height:100%;}
+
+/*global*/
+.left{float:left; display:inline;}
+.right{float:right; display:inline;}
+.hide{display:none;}
+.clearfix:after{display:block; clear:both; content:""; visibility:hidden; height:0; }
+.clearfix{zoom:1;}
+.clear{ clear:both;}
+.none{ display: none;}
+.prorel{ position: relative;}
+
+a{text-decoration:none;color:#6E6E6E; outline: none;}
+a:hover{text-decoration: underline;} 
+a:active{text-decoration: none;outline: none;} 
+a:focus{text-decoration:none; outline: none; }
+/* input火狐垂直居中  */
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{border:none;padding:0;}
+input[type="checkbox"]{margin-right: 5px;}
+
+.loginBar .userName,
+.login .password,
+.more a,
+.gotop,
+.downloadList,
+.videoRlist .clickLeftBtn span,
+.videoRlist .clickRightBtn span{ background-image: url("/image/xiaoxin/login/pngIco.png"); background-repeat:no-repeat;}
+
+/*-------------------- header ---------------*/
+.headerBar{ position: absolute; left: 0; top: 0; z-index: 2; width: 100%;}
+.header{padding-top:20px; height: 45px; width:970px; margin:0 auto;}
+.header h1 a{ width: 200px; height: 45px; display:block;float: left; overflow: hidden;}
+.header .nav li{ float: left; height: 40px; line-height: 40px; padding: 0 50px; background: url("/image/xiaoxin/login/navLine.jpg") no-repeat right center;}
+.nav li.end{ background: no-repeat;}
+.nav li a{ font-family: "微软雅黑"; font-size: 18px; color: #666;}
+/* ------------- 身份选择------------------*/
+.statusBox{ margin-bottom: 20px; position: relative; height: 38px;}
+.statusBox a{ position: relative; float: left; text-align: center;  border: 1px solid #a6a6a6; width: 143px; height: 36px; margin: 0px;  line-height: 36px; font-size: 14px; }
+.statusBox a.status{ background: #169af5; border-color:#169af5; color: #FFFFFF; width: 103px; padding-left: 40px; }
+.statusBox a.status em{float: left; top:-13px; left: 3px; width: 45px; height: 50px; position: absolute;   }
+.statusBox a.status em.teacher{background: url("/image/xiaoxin/login/statusIoc.png") no-repeat top;}
+.statusBox a.status em.parents{background: url("/image/xiaoxin/login/statusIoc.png") no-repeat bottom;}
+.statusBox a.last{ border-left: none;  }
+.statusBox a:hover{ text-decoration: none;  }
+
+
+/*-------------------- main1 ---------------*/
+.main1{height: 90%!important;width:930px; margin:0 auto;min-height:700px;width:930px;position: relative; z-index: 1;}
+.login{width: 290px;position:absolute;top:30%;}
+.login .slogin{ margin-bottom:35px;}
+.login .input{margin-bottom: 10px; position: relative; border:1px solid #a6a6a6; }
+.login .userName{height: 36px; line-height:34px;background-position:-12px -15px; padding-left:37px;}
+.login .password{height: 36px; line-height:34px;background-position:-12px 12px; padding-left:37px;}
+.login .input .textInput{border: none;margin:1px;height: 34px; *line-height:34px;color: #666; border-color: #fff;}
+.login .input .valueSpan{display: block;position: absolute; left:10px; top:0; height: 34px;line-height:38px; color: #999; z-index: 5;}
+.login .rememberme{}
+.login .rememberme input{ margin-top: -2px;}
+.login .botton{padding-top:15px;}
+.login .btn{display: inline-block; border:0; text-align: center; cursor: pointer;background-color: #18a535; color: #fff; font-family: "微软雅黑"; font-size: 16px; }
+.login .btn:hover{ background-color: #46b75d; text-decoration: none; opacity: 0.9;}
+.login .blueBtn{ background-color: #169af5;margin-left:12px;}
+.login .blueBtn:hover{ background-color: #45adf7;}
+.login .btn:active{ background-color: #18a535;}
+.login .blueBtn:active{ background-color: #169af5;}
+.login .green{color: #599b63;}
+.login .botton .getpasBtn{ width: 119px; border: none; cursor: pointer; font-weight: normal;}
+.loginBar .input .textInput{width: 250px;background-color: none;}
+.loginBar .input .valueSpan{left:40px;}
+.loginBar .botton .btn{ text-decoration: none; font-size: 17px; display: inline-block; height: 40px; width: 100%; line-height: 40px; vertical-align: middle;}
+
+.slide{position: absolute; right:0; top:15%;}
+.phone1{ position: relative;z-index: 2;}
+.phone2{background: url("/image/xiaoxin/login/phone2.jpg") no-repeat; width: 239px; height: 501px; position: absolute; z-index: 1; top: 50px;right:197px;}
+.phone2Line{ display: block; width: 95px; height: 256px;background: url("/image/xiaoxin/login/phone2Line.png") no-repeat left top; z-index: 12;left: 22px; top:50px; position: absolute;}
+.slideImg{width:195px; height: 346px; overflow: hidden; position: absolute;left:22px; top:50px; z-index: 11;}
+.slideImg li{position:absolute;opacity: 0;filter:alpha(opacity=0);}
+.more{position: absolute; bottom:30px; text-align: center; width: 100%;z-index: 10;}
+.more img{ vertical-align: -5px; margin-right: 5px;}
+.more a{ font-size: 14px; font-family: "微软雅黑"; padding-right: 25px; background-position: 65px 8px;}
+
+
+/*-------------------- content ---------------*/
+#main2{position: relative;}
+.gotop{ display: block;width: 50px; height: 50px; border:1px solid #b3b3b3; position:fixed; right:20px; bottom:140px; border-radius: 5px; background-position: center -380px; z-index: 10;}
+.gotop:hover{border-color:#45adf7; background-color: #45adf7; background-position: center -432px;}
+.content{ width: 1100px; margin: 0 auto;height:706px;}
+.double{ width: 100%; background-color: #f9f9f9;}
+.odd{ width: 100%; background-color: #fff;}
+.content .detail{font-family: "微软雅黑";margin-top:20%;}
+.content img{margin-top:4%;}
+.content .detail h2{font-size: 45px; line-height: 60px; font-weight: 500;margin-bottom: 40px;}
+.content .detail p{ font-size: 17px; line-height: 30px;}
+/*.content5 .detail{margin-right: 100px;}*/
+.content6{height: 740px;}
+.content6 img{margin-top:0;}
+.content6 .detail{margin-top:25%;}
+
+/*-------------------- download ---------------*/
+.downloadBar{ background-color: #666;padding-top:70px; padding-bottom:80px;}
+.download{width:750px; margin: 0 auto;}
+.download h3{ font-family: "微软雅黑"; font-size: 30px; color: #fff; line-height: 45px; height:100px; font-weight:normal; text-align: center;}
+.downloadList{ width: 170px;padding-right: 60px;padding-left:60px; background-position: 288px -70px;}
+.downloadList dt{ height:34px; padding-bottom: 35px;text-align: center;}
+.downloadList dd{height: 40px;padding-bottom: 20px;}
+.downloadList dd a{ width:100px;height: 40px; line-height: 40px;padding-left:70px;font-family: "微软雅黑"; font-size: 16px;display: block; background: url("/image/xiaoxin/login/btnBg.png") no-repeat;}
+.downloadList dd a:hover{color: #fff; background-position: right 0;}
+.downloadList dd a.icoyyb{ background-position:left -43px;}
+.downloadList dd a.icoyyb:hover{ background-position:right -43px;}
+.downloadList dd a.icogfxz{ background-position:left -86px;}
+.downloadList dd a.icogfxz:hover{ background-position:right -86px;}
+.downloadList dd a.icoWdj{ background-position:left -129px;}
+.downloadList dd a.icoWdj:hover{ background-position:right -129px;}
+.downloadList dd a:hover,
+.downloadList dd a:active{text-decoration: none;}
+.code{ width: 110px; text-align: center;padding-top:5px;}
+.code h2{ font-family: "微软雅黑"; font-size:18px; color: #fff;height:65px; font-weight: normal;}
+
+.footer{ background-color: #d9d9d9; text-align: center;padding:30px 0;width: 100%; overflow: hidden; position: relative; z-index: 999;}
+.footer a{padding:0 10px;}
+
+/*-------------------- actCon ---------------*/
+.actCon{ width: 1100px; margin:0 auto;padding-top:100px;padding-bottom:50px;}
+.actConList{margin-bottom: 20px;}
+.actCon .tit{ font-family: "微软雅黑";height: 50px; line-height: 50px;}
+.actCon .tit a{ font-size:20px; color: #000;}
+.actCon .tit span.date{ font-size: 16px;font-family: "微软雅黑";}
+
+/* 忘记密码 */
+.forgetpas h2{ font-family: "微软雅黑"; font-size: 18px; height: 50px; color: #000; font-weight:normal;}
+.forgetpas .input .btn{ font-family: "宋体"; font-size: 12px;background-color: #39a9f6; padding:0; width: 105px; height: 36px;margin-left:0;}
+.forgetpas .input .btn:hover{ background-color: #3bb0ff;}
+.forgetpas .input .btn:active{ background-color: #3298db;}
+.forgetpas .input .grayBtn,
+.forgetpas .input .grayBtn:hover,
+.forgetpas .input .grayBtn:active,
+.login .botton .grayBtn,
+.login .botton .grayBtn:hover
+.login .botton .grayBtn:active{ background-color: #e6e6e6; color:#999; cursor: inherit;}
+
+.forgetpas .textInput{ width:287px;}
+.forgetpas .telInput{ width:175px; margin-right: 0;}
+.forgetpas .botton{ padding-top:10px;}
+.forgetpas .botton .btn{ width: 100%; height:48px; line-height: 48px;}
+.forgetpas a.loginText{ color: #037c1c; font-size: 14px;padding:20px; text-decoration: underline;}
+.forgetpas a.loginText:hover{ color: #39a9f6;}
+
+
+/* 窗口宽度在1300px以下, 1000以上 */
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+	.header{width:970px;}
+	.main1{ width:750px;}
+	.content{ width:950px; height: 560px;}
+	.content6{height: 605px;}
+	.content img{ width:530px;}
+	.content4 img{ width:475px;}
+	.content5 img{ width:400px;}
+	.download{ width:620px;}
+	.downloadList{padding-left:35px;padding-right:35px; background-position:-239px -70px; }
+}
+
+/* 窗口宽度在640px以上, 999px以下 */
+@media screen and (min-width: 640px) and (max-width: 999px){
+	.main1{min-height:700px}
+	.content{ width:950px;}
+	.content img{ width:500px;}
+        .footer{ margin-top: 110px;}
+}
+
+
+
+
+
+
+/*chorme 浏览器 黄色边框问题*/
+input {outline: none;}
+
+
+
+/*------------ 视频教程页面 ------------*/
+.videoBody{ min-height:800px; position:relative;}
+.videoTabCom{ height:500px; overflow: hidden;}
+.videoTabTit{ border-bottom: 1px solid #ccc; height: 35px;padding-left: 5px;}
+.videoTabTit span{ display: inline-block; height:32px; line-height: 32px; margin-right:30px;padding-left:5px; text-align: center; cursor: pointer;}
+.videoTabTit span.focus{ border-bottom: 3px solid #169af5;}
+.videoTit{ font-family: "微软雅黑"; font-size: 24px; color: #4c4c4c; height: 50px; line-height: 50px; text-overflow: ellipsis; white-space:nowrap; overflow: hidden; font-weight: normal;}
+.video .videoTit{ width: 750px;}
+
+/* 视频列表 */
+.video{ width: 800px; overflow: hidden;}
+.videoRlist{ width: 300px;height:450px;position: relative; background: #e5e5e5 url(/image/xiaoxin/login/videoRline.png) repeat-x center 30px;;}
+.videoRlist .clickLeftBtn span,
+.videoRlist .clickRightBtn span{ width: 300px; height:30px; text-indent: -999em; overflow: hidden; display:block; cursor: pointer;}
+.videoRlist .clickLeftBtn span{ background-position: center -487px;}
+.videoRlist .clickRightBtn span{ background-position: center -580px;}
+.videoRlist .clickLeftBtn span.focus{ background-position: center -548px;}
+.videoRlist .clickRightBtn span.focus{ background-position: center -519px;}
+.videoRlistBar{ width: 300px; height:392px; overflow: hidden; position: relative;}
+.videoTabCom{ width: 300px;}
+.videoTabCon .videoTit{ font-size: 18px;}
+.videoRlistshow{ position: absolute; width: 100%;}
+.videoRlistshow li{ position: relative; height:80px; padding:7px 10px 11px 130px; background: url(/image/xiaoxin/login/videoRline.png) repeat-x center bottom; cursor: pointer;}
+.videoRlistshow li span{ display: block; position: absolute;}
+.videoRlistshow li span.videoListL,
+.videoRlistshow li span.videoListL img,
+.videoRlistshow li span.mask{ width: 106px; height: 80px;}
+.videoRlistshow li span.videoListL{padding: 3px;left:10px;}
+.videoRlistshow li span.videoListL img{ position:relative; z-index: 1;}
+.videoRlistshow li span.mask{background: url(/image/xiaoxin/login/videoRmask.png) no-repeat; z-index: 2; left: 3px; top: 3px; display: none;}
+.videoRlistshow li:hover span.mask{ display: block;}
+.videoRlistshow li span.length{ z-index: 3;background: url(/image/xiaoxin/login/blankOpa70.png); padding:0 5px; height: 18px; line-height: 18px; overflow: hidden; font-size: 12px; color: #fff;right: 3px; bottom:3px; font-family: "Arial";}
+.videoRlistshow li h3{ font-size: 14px; line-height: 22px; height: 44px; overflow: hidden; overflow: hidden; font-weight: normal;font-family:"微软雅黑";word-break: break-all;}
+.videoRlistshow li p{ height: 22px; line-height: 22px; overflow: hidden; margin-top:20px;font-family:"微软雅黑";}
+.videoRlistshow li.focus{ background-color:#666; color: #fff;}
+.videoRlistshow li.focus span.videoListL{background: url(/image/xiaoxin/login/blueBorder.png);}
+.videoRlistshow li.focus span.length,
+.videoRlistshow li.focus span.mask{ display: none;}
+
+.videoFooter{ position:absolute; left: 0; bottom:0;}

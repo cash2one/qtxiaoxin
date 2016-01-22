@@ -1,0 +1,13 @@
+<?php
+
+//require_once('C:\Users\Administrator\AppData\Roaming\Composer\vendor\autoload.php');
+
+// change the following paths if necessary
+$yiit=dirname(__FILE__).'/../../../../../yii/framework/yiit.php';
+$config=dirname(__FILE__).'/../../../config/test.php';
+
+require_once($yiit);
+require('WebTestCase.php');
+
+
+Yii::createWebApplication($config);

@@ -1,0 +1,83 @@
+/* -------------------- */
+/* message types        */
+/* -------------------- */
+
+#message
+{
+/* padding:.8em; if not use icon */
+    background: #E6EFC2;
+    color: #264409;
+    border-color: #C6D880;
+    text-align: center;
+    height: 33px;
+    vertical-align: middle;
+    margin-bottom:10px;
+}
+
+#type-error
+{
+    background:#FBE3E4;
+    color:#8a1f11;
+    border-color:#FBC2C4;
+    text-align: center;
+    line-height: 33px;
+
+}
+
+#type-note
+{
+    background:#FFF6BF;
+    color:#514721;
+    border-color:#FFD324;
+    text-align: center;
+    line-height: 33px;
+
+}
+
+#type-success
+{
+    background: #E6EFC2;
+    color: #264409;
+    border-color: #C6D880;
+    text-align: center;
+    line-height: 33px;
+}
+
+#type-error a
+{
+	color:#8a1f11;
+}
+
+#type-note a
+{
+	color:#514721;
+}
+
+#type-success a
+{
+	color:#264409;
+}
+
+/* -------------------- */
+/* icon */
+/* -------------------- */
+
+#icon-success{
+    background: url(icon/success.png) no-repeat 12px 1px;
+    display: block;
+    margin: -33px auto;
+    height: 32px;
+}
+
+#icon-note{
+    background:url(icon/note.png) no-repeat 12px 1px;
+    display:block;
+    margin: -33px auto;
+    height: 32px;
+}
+#icon-error{
+    background:url(icon/error.png) no-repeat 12px 1px;
+    display:block;
+    margin: -33px auto;
+    height: 32px;
+}

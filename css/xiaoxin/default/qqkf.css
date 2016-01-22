@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors H君 (you@example.org)
+ * @date    2014-10-27 14:20:11
+ * @version $Id$
+ */
+.qqkf{
+    position: fixed;
+    left: 43%; 
+    top:0; 
+    height: 30px;  
+    color: white; 
+    z-index: 50;
+    width: 178px;
+}
+.qqkf .qq-list{
+    background: #E95B5F;
+    margin:0 1px;
+    display:none;
+   font-size: 0;
+   overflow: hidden;
+}
+.qqkf .qq-list li{
+    background:#fff;
+    margin:0 5px;
+ }
+ .qqkf .qq-list li .q-person{
+    margin:0 10px;
+    padding:5px 0;
+    border-bottom:1px solid #E3E3E3;
+ }
+.qqkf .qq-list li .q-person a{
+    background: url(/image/xiaoxin/qq/qqIco.jpg) no-repeat 0 center;
+    padding-left:30px;
+    display:inline-block;
+    overflow:hidden;
+    color:#000;
+    height:22px;
+    line-height: 22px;
+    font-size: 13px;
+}
+.qqkf .qq-tit{
+    width:178px;
+    height:37px;
+    background: url(/image/xiaoxin/qq/tubiap.png) no-repeat;
+}

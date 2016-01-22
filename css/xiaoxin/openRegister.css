@@ -1,0 +1,81 @@
+body,a ,p,input,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form{margin:0;padding:0;list-style:none;vertical-align:middle}body{background-color:#ffffff;font-family: "\5FAE\8F6F\96C5\9ED1","微软雅黑",helvetica,arial;color:#000;font-size:14px}header,section,footer,img{display:block;margin:0;padding:0}img{border:0}
+* {margin:0 auto;padding:0; outline: 0;}
+a{outline: 0; noFocusLine: expression(this.onFocus = this.blur());} a:focus{ outline: 0; }
+img {border:none;line-height:0;} 
+a img{border-width:0;vertical-align:middle;outline: none;} 
+ul,li{border:0;margin:0;padding:0;list-style:none;}
+input[type=text]:focus,input[type=password]:focus,textarea:focus{outline: none;}
+input{margin-right:3px;vertical-align:middle;}
+label{font-family:Tahoma;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;outline: 0;}
+input[type="radio"], input[type="checkbox"] {
+margin: 4px 0 0;
+margin-top: 1px \9;
+*margin-top: 0px;
+line-height: normal;
+}
+input,button,textarea,select{*font-size:100%; outline: 0;} 
+textarea{resize:none;outline: none;}
+form{margin:0;padding:0;border:0}
+.clearfix{zoom:1;_height:1px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clear{clear:both;font-size:0;height:0;line-height:0;}
+.fleft{float:left}
+.fright{float:right} 
+.show{display:block}
+.hide{display:none}
+.red{color: #e95b5f; }
+/*------按钮样式---------*/ 
+.btn { margin-right: 10px; text-decoration: none; color: #fff;  display: inline-block; padding: 8px 20px; margin-bottom: 0; font-size: 16px; font-weight: normal;  text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; border-radius: 0px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; outline: none;}
+.btn-default { color: #333333; background-color: #f3f3f3;}
+.btn-default:hover, .btn-default:focus {color: #333333; background-color: #d7d7d7; text-decoration: none; -webkit-transition: background-position .1s linear; border-color: #cccccc; }
+.btnColor1{background-color:#18a535;}
+.btnColor2{background-color:#999999;}
+.bTop{ border-top: 1px solid #E1E1E1;}
+.bBottom{border-bottom: 1px solid #E1E1E1;}
+.btn:hover,.btn:focus{ opacity: 0.8;}
+  /*-------------------- header ---------------*/
+.headerBar{ position: absolute; left: 0; top: 0; z-index: 2; width: 100%;}
+.header{padding-top:20px; height: 45px; width:970px; margin:0 auto;}
+.header h1 a{ width: 200px; height: 45px; display:block;float: left; overflow: hidden;}
+.header .nav li{ float: left; height: 40px; line-height: 40px; padding: 0 50px; background: url("/image/xiaoxin/login/navLine.jpg") no-repeat right center;}
+.nav li.end{ background: no-repeat;}
+.nav li a{ font-family: "微软雅黑"; font-size: 18px; color: #666;}
+
+/*-------------------- 主体 ---------------*/
+.layout_div{width: 100%; margin: 0 auto; overflow: hidden;clear: both; background:#fff; text-align:center;}
+.layout_main{width:1000px;margin: 0 auto;overflow: hidden;clear: both; border:1px solid #e2e2e2; border-top:none;border-radius:5px;}
+.layout_conrent{width:100%;background:#f5f5f5; margin:0 auto; }
+.headTitle{ background-color: #169af5; color: #ffffff; padding: 15px; text-align: left;  border-radius:5px 5px 0 0; }
+.rSubBox{ width: 320px; padding-top:50px;}
+.rSubBox .imgBox{ margin-bottom: 50px; }
+.rSubBox .imgBox img{ text-align: center; display: inline;}
+.rSubBox .imgBox h3{ color: #000; font-size: 16px; margin-top: 10px; }
+.rSubBox ul{ padding:0px 10px 0 65px;}
+.rSubBox ul li{ text-align: left; color: #999999; margin-bottom: 5px; padding-left: 15px; background: url('/image/xiaoxin/openregister/listStyle_nav.png') left center no-repeat;}
+.mainBox{ background:#fff; margin-right:320px; border-right: 1px solid #e2e2e2; padding: 50px 40px; }
+.mainBox .step{ border-bottom: 1px dashed #e2e2e2; padding-bottom: 25px; }
+.mainBox .step img{ text-align: center; display: inline; }
+.formBox{ width: 390px;}
+.formBox h2{ color: #333333; font-size: 18px; margin: 45px 0; }
+.openReginfo h2{margin: 25px 0; text-align: left; }
+.formBox p{ text-align: left;  margin-bottom: 10px; }
+.formBox p span.title{ display:inline-block; width: 70px; text-align: right;  }
+.formBox p.btnBox{ text-align: center; margin-bottom: 30px; }
+.formBox p.info{ color: #999999; width: 380px; padding-left: 15px; text-align: center; }
+.formBox p.error{  }
+.formBox p.agreement{ text-align: center; }
+.formBox p.agreement a{ color: #6DB7F8;} 
+.formBox input{ height: 35px; line-height: 35px; }
+.formBox input.text{ width: 280px; }
+.formBox input.moblie{width: 280px;}
+.formBox input.code{width: 182px; }
+.formBox .codeBnt{ width: 90px; text-decoration: none; color: #333333; background-color: #E7E7E7; text-align: center; display: inline-block; padding: 8px 0px; margin-bottom: 0; font-size: 13px; font-weight: normal;  text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid #e2e2e2; border-radius: 0px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; outline: none;}
+.formBox .codeBnt:hover{ opacity: 0.8;}
+.successBox{ }
+.successBox .successInfo{ font-size: 24px; color: #FF7114; margin: 50px 0; }
+.successBox p.info{ text-align: center; }
+.successBox .successBtnBox{ margin-top: 50px; }
+

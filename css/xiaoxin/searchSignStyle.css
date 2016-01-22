@@ -1,0 +1,154 @@
+body,p,input,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form{margin:0;padding:0;list-style:none;vertical-align:middle}
+body{background-color:#EDEDED;font-family: "微软雅黑", "宋体", Arial, "Lucida Grande", Verdana, Lucida, Helvetica, sans-serif;color:#000; font-size:14px; margin: 0 auto;}
+header,section,footer,img{display:block;margin:0;padding:0}img{border:0}
+* {margin:0 auto;padding:0;}
+img {border:none;line-height:0;} 
+a img{border-width:0;vertical-align:middle}
+ul,li{border:0;margin:0;padding:0;list-style:none;}
+input[type=text]:focus,input[type=password]:focus,textarea:focus{outline:0}
+input{margin-right:3px;vertical-align:middle}
+label{font-family:Tahoma;vertical-align:middle}
+table { border-collapse: collapse; border-spacing: 0; }
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%} 
+textarea{resize:none}
+form{margin:0;padding:0;border:0}
+.clearfix{zoom:1;_height:1px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clear{clear:both;font-size:0;height:0;line-height:0;}
+.color1{ color: #e26421;}
+.colorO{color: #e16421; text-decoration: none; font-size: 14px;}
+.fleft{float:left}
+.fright{float:right} 
+.show{display:block}
+.hide{display:none}
+.red{
+    color:#DE2929;
+}
+.layout_div{width: 600px; margin: 0 auto; overflow: hidden;clear: both;}
+.layout_main{width: 600px;margin: 0 auto;overflow: hidden;clear: both; }
+.layout_conrent{width:100%;background:#fff; margin:0 auto; background-color: #fff;}
+.logo{ text-align: center; padding-bottom: 60px; }
+.logo a img{ text-align: center; display: inline; } 
+.fromBox{ width: 294px; padding:40px 0;}
+.fromBox .title{ font-size: 19px; color: #000000; margin-bottom: 25px; } 
+.fromBox .userName,.fromBox .password{ background-image: url("/image/xiaoxin/login/register-icon.png"); background-repeat:no-repeat;} 
+.fromBox .input{margin-bottom: 10px; position: relative; border:1px solid #a6a6a6; }
+.fromBox .userName{height: 36px; line-height:34px; background-position: -1px -3px; padding-left:37px;}
+.fromBox .password{height: 36px; line-height:34px;background-position:-1px -33px; padding-left:37px;}
+.fromBox .input .textInput{width: 240px; border: none;margin:1px;height: 34px; *line-height:34px;color: #666;border-color: #fff;}
+.fromBox .input .valueSpan{display: block;position: absolute; left:38px; top:0; height: 34px;line-height:34px; color: #999; z-index: 5;}
+.fromBox .rememberme{ height: 30px; }
+.fromBox .bBottomBox{ margin-top: 5px; }
+.fromBox .bBottomBox a{ display: block;}
+.fromBox .bBottomBox a:hover{opacity: 0.8;}
+.tableform > tbody > tr > td {
+    vertical-align: middle;
+    height:35px;
+    color: #333333;
+}
+.inputBox{ display: inline; margin-right: 10px;}
+.inputBox input{ height: 25px; line-height: 25px; width: 120px;}
+.serialIco{font-style: normal; color: #333333; text-align: center; line-height: 26px; display: inline-block;  background: url('/image/xiaoxin/login/register-icon.png') no-repeat -7px -82px; width: 27px; height: 26px; margin-right: 10px; }
+.tableform .lable{ color: #999999;}
+/* popupBox弹出框 */
+.popupBox{ width: 395px; min-height: 150px; padding:0; margin: 50px auto; position:absolute ; z-index: 99999; background-color: #fff; display: none; }
+.popupBox .header{ height: 40px; line-height: 40px;  color: #fff; font-size: 16px; background-color: #169AF5; padding: 0 20px; } 
+.popupBox .header .remenber-icon{
+    background: url('/image/xiaoxin/login/register-icon.png') no-repeat -10px -131px;
+    width: 25px;
+    height: 23px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.popupBox .close{ width: 16px; height: 16px;  font-size: 16px; display: block; position:absolute; right:10px; top: 15px; cursor: pointer; background: url('/image/xiaoxin/login/register-icon.png')  no-repeat -12px -167px; opacity: 1;}
+.popupBox h3{ font-size: 24px;  margin: 0; padding: 5px 0;  color: #333; word-wrap : break-word; white-space:normal;}
+.popup{padding:30px 0 30px 50px;}
+.popupBox .prompt{ width: 100%; height: auto; overflow: hidden; margin: 5px 0;}
+.popupBox .prompt img{ width: 100%; height: 120px; } 
+.popupBox .centent{ font-size: 14px; color: #666666; text-indent: 2em; padding: 5px 0; word-wrap : break-word; white-space:normal;} 
+.popupBox .remindInfo{ padding: 20px;}
+.popupBox .popupBtn{ text-align: center; margin:0 0 20px 0; }
+.popupBox .remindInfo input.lg{width:220px;}
+.popupBox .remindInfo input.xlg{width:320px;}
+.popupBox .remindInfo textarea{width:100%;height: 100px;}
+.popupBox .remindInfo .Validform_checktip{margin:0;}
+
+/*------按钮样式---------*/
+.btnBox{ text-align: center; padding: 30px 0; }
+a.btn{ text-decoration: none;}
+.btn:hover{opacity: 0.8;}
+.btn {display: inline-block; padding: 8px 40px;  margin-bottom: 0; font-size: 16px; font-weight: normal; margin-left: 8px; text-align: center; white-space: nowrap; vertical-align: middle; margin-right: 30px; cursor: pointer; background-image: none; border: 1px solid transparent; border-radius:2px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; outline: none;}
+.btn-default { color: #ffffff; background-color: #b7b7b7; border-color: #b7b7b7; }
+.btn-default:hover, .btn-default:focus { opacity: 0.8;}
+
+.bTop{ border-top: 1px solid #E1E1E1;}
+.btn-color1{background-color: #18A535; color: #ffffff; border-color: #18A535;}
+.btn-color2{background-color: #169AF5; color: #ffffff; border-color: #169AF5;} 
+.bBottom{border-bottom: 1px solid #E1E1E1;}
+
+/************ 表格样式 table****************/
+.table { width: 100%; margin-bottom:10px;  } 
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 8px; line-height: 1.428571429;  vertical-align: top; border-top: 1px solid #dddddd;
+}
+.table > thead > tr > th {
+    vertical-align: bottom;  border-bottom: 2px solid #dddddd;
+    background: #E7E7E7;
+    color:#999;
+    font-weight: normal;
+}
+.table > tbody > tr > td.head {
+     background-color: #eeeeee;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+.table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+.table .table {
+    background-color: #ffffff;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+    border-bottom: 1px solid #dddddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+    border-bottom-width: 1px;
+}
+.table > tbody > tr > td {
+    vertical-align: middle;
+    text-align: center;
+    padding:15px;
+    cursor:pointer;
+}
+.table > tbody > tr:hover{
+    background: #E7E7E7;
+}
+.table .school-list{
+    text-align: left;
+}
+.table .user-name{
+    text-decoration: underline;
+    color:#169AF5;
+}

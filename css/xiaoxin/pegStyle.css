@@ -1,0 +1,61 @@
+#pager{ text-align: right; }
+#pager ul.yiiPager
+{   
+    border:0;
+    margin:0;
+    padding:0;
+    line-height:100%;
+    display:inline;
+}
+
+#pager ul.yiiPager li
+{
+    display:inline;
+    margin: 0;
+    padding: 0; 
+}
+
+#pager ul.yiiPager a:link,
+#pager ul.yiiPager a:visited
+{
+    border:solid 1px #E1E1E1;
+    font-weight:bold;
+    display:inline;
+    color:#333333;
+    padding:5px 12px;
+    line-height: 20px;
+    text-decoration:none;
+}
+
+#pager ul.yiiPager .page a
+{
+    font-weight:normal; 
+}
+
+#pager ul.yiiPager a:hover
+{
+    border:solid 1px #e95b5f;
+}
+
+#pager ul.yiiPager .selected a
+{
+    background:#e95b5f;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+#pager ul.yiiPager .hidden a
+{
+    border:solid 1px #e95b5f;
+    color:#888888;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+#pager ul.yiiPager .first,
+#pager ul.yiiPager .last
+{
+    display: inline;
+}
+  

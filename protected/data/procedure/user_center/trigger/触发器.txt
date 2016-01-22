@@ -1,0 +1,266 @@
+/* 地区 */
+drop TRIGGER if exists trigger_tb_area_insert;
+create trigger trigger_tb_area_insert after insert
+on tb_area for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_area',new.aid);
+end;
+
+drop TRIGGER if exists trigger_tb_area_update;
+create trigger trigger_tb_area_update after update
+on tb_area for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_area',new.aid);
+end;
+
+/* 班级 */
+
+drop TRIGGER if exists trigger_tb_class_insert;
+create trigger trigger_tb_class_insert after insert
+on tb_class for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_class',new.cid);
+end;
+
+drop TRIGGER if exists trigger_tb_class_update;
+create trigger trigger_tb_class_update after update
+on tb_class for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_class',new.cid);
+end;
+
+
+
+/* 学校 */
+drop TRIGGER if exists trigger_tb_school_insert;
+create trigger trigger_tb_school_insert after insert
+on tb_school for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_school',new.sid);
+end;
+
+drop TRIGGER if exists trigger_tb_school_update;
+create trigger trigger_tb_school_update after update
+on tb_school for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_school',new.sid);
+end;
+/* 部门 */
+drop TRIGGER if exists trigger_tb_department_insert;
+create trigger trigger_tb_department_insert after insert
+on tb_department for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_department',new.did);
+end;
+
+drop TRIGGER if exists trigger_tb_department_update;
+create trigger trigger_tb_department_update after update
+on tb_department for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_department',new.did);
+end;
+
+/* 年级 */
+drop TRIGGER if exists trigger_tb_grade_insert;
+create trigger trigger_tb_grade_insert after insert
+on tb_grade for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_grade',new.gid);
+end;
+
+drop TRIGGER if exists trigger_tb_grade_update;
+create trigger trigger_tb_grade_update after update
+on tb_grade for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_grade',new.gid);
+end;
+
+/* 科目  */
+drop TRIGGER if exists trigger_tb_subject_insert;
+create trigger trigger_tb_subject_insert after insert
+on tb_subject for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_subject',new.sid);
+end;
+
+drop TRIGGER if exists trigger_tb_subject_update;
+create trigger trigger_tb_subject_update after update
+on tb_subject for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_subject',new.sid);
+end;
+
+
+
+/* group 分组  */
+drop TRIGGER if exists trigger_tb_group_insert;
+create trigger trigger_tb_group_insert after insert
+on tb_group for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_group',new.gid);
+end;
+
+drop TRIGGER if exists trigger_tb_group_update;
+create trigger trigger_tb_group_update after update
+on tb_group for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_group',new.gid);
+end;
+
+/* group_member 组成员  */
+drop TRIGGER if exists trigger_tb_group_member_insert;
+create trigger trigger_tb_group_member_insert after insert
+on tb_group_member for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_group_member',new.id);
+end;
+
+drop TRIGGER if exists trigger_tb_tb_group_member_update;
+create trigger trigger_tb_tb_group_member_update after update
+on tb_group_member for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_group_member',new.id);
+end;
+
+/* tb_school_teacher_relation 老师学校关系  */
+drop TRIGGER if exists trigger_tb_school_teacher_relation_insert;
+create trigger trigger_tb_school_teacher_relation_insert after insert
+on tb_school_teacher_relation for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_school_teacher_relation',new.id);
+end;
+
+drop TRIGGER if exists trigger_tb_school_teacher_relation_update;
+create trigger trigger_tb_school_teacher_relation_update after update
+on tb_school_teacher_relation for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_school_teacher_relation',new.id);
+end;
+
+/* tb_class_student_relation 班级学生关系  */
+drop TRIGGER if exists trigger_tb_class_student_relation_insert;
+create trigger trigger_tb_class_student_relation_insert after insert
+on tb_class_student_relation for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_class_student_relation',new.id);
+end;
+
+drop TRIGGER if exists trigger_tb_class_student_relation_update;
+create trigger trigger_tb_class_student_relation_update after update
+on tb_class_student_relation for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_class_student_relation',new.id);
+end;
+
+
+/* tb_class_teacher_relation 老师班级关系  */
+drop TRIGGER if exists trigger_tb_class_teacher_relation_insert;
+create trigger trigger_tb_class_teacher_relation_insert after insert
+on tb_class_teacher_relation for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_class_teacher_relation',new.id);
+end;
+
+drop TRIGGER if exists trigger_tb_class_teacher_relation_update;
+create trigger trigger_tb_class_teacher_relation_update after update
+on tb_class_teacher_relation for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_class_teacher_relation',new.id);
+end;
+
+/* tb_user  用户*/
+drop TRIGGER if exists trigger_tb_user_insert;
+create trigger trigger_tb_user_insert after insert
+on tb_user for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_user',new.userid);
+end;
+
+drop TRIGGER if exists trigger_tb_user_update;
+create trigger trigger_tb_user_update after update
+on tb_user for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_user',new.userid);
+end;
+
+/* tb_guardian  监护人(家长)*/
+drop TRIGGER if exists trigger_tb_guardian_insert;
+create trigger trigger_tb_guardian_insert after insert
+on tb_guardian for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_guardian',new.id);
+end;
+
+drop TRIGGER if exists trigger_tb_guardian_update;
+create trigger trigger_tb_guardian_update after update
+on tb_guardian for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_guardian',new.id);
+end;
+
+/* tb_user_ext 用户其它信息  */
+drop TRIGGER if exists trigger_tb_user_ext_insert;
+create trigger trigger_tb_user_ext_insert after insert
+on tb_user_ext for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_user_ext',new.userid);
+end;
+
+drop TRIGGER if exists trigger_tb_user_ext_update;
+create trigger trigger_tb_user_ext_update after update
+on tb_user_ext for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_user_ext',new.userid);
+end;
+
+/* tb_student_ext  学生其它信息 */
+drop TRIGGER if exists trigger_tb_student_ext_insert;
+create trigger trigger_tb_student_ext_insert after insert
+on tb_student_ext for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_student_ext',new.userid);
+end;
+
+drop TRIGGER if exists trigger_tb_student_ext_update;
+create trigger trigger_tb_student_ext_update after update
+on tb_student_ext for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_student_ext',new.userid);
+end;
+
+/* tb_teacher_ext  老师其它信息 */
+drop TRIGGER if exists trigger_tb_teacher_ext_insert;
+create trigger trigger_tb_teacher_ext_insert after insert
+on tb_teacher_ext for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('insert','tb_teacher_ext',new.userid);
+end;
+
+drop TRIGGER if exists trigger_tb_teacher_ext_update;
+create trigger trigger_tb_teacher_ext_update after update
+on tb_teacher_ext for each row
+begin
+  insert into tb_table_change_log(action,`table`,objectid) values('update','tb_teacher_ext',new.userid);
+end;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

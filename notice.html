@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <title>产品升级公告</title>
+            <meta name="description" content="">
+            <meta name="keywords" content="">
+            <link href="" rel="stylesheet">
+            <style>
+                    body,a ,p,input,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form{margin:0;padding:0;list-style:none;vertical-align:middle;}
+                    .ad{
+                            padding:20px 10px;
+                            font-size:16px;
+                    }
+                    .ad .tit{
+                            text-align:center;
+                            margin-bottom:20px;
+                    }
+                    .ad .tit h1{
+                            font-size:20px;
+                    }
+                    .ad p{
+                            text-indent:2em;
+                            margin-bottom:5px;
+                            line-height:24px;
+                    }
+                    .right{
+                            text-align:right;
+                    }
+                    .enter{
+                        text-align:center;
+                    }
+                    .enter input{
+                        margin-top: -2px;
+                    }
+                    .enter span{
+                        font-size:13px;
+                        margin-left:5px;
+                    }
+                    .enter .btn{
+                        display:block;
+                        font-size:24px;
+                        margin:20px 0 40px;
+                        color:#F59201;
+                    }
+            </style>
+        </head>
+        <body>
+            <div class="ad">
+                <div class="tit"><h1>产品升级公告</h1></div>
+                <p>尊敬的用户：</p>
+                <p>为给您提供更丰富、稳定、便捷的服务，“蜻蜓校信”自2015年2月28日起，正式升级为“班班”，网页端及手机应用均有重要升级变更。“班班”新增“班费”等功能，给您带来更多的福利和沟通体验。请您点击下方“进入班班”按钮，或直接访问班班网址<a href="http://www.banban.im" style="color:red;">http://www.banban.im</a>，使用及下载“班班”网页端和手机应用。</p>
+                <p>原“蜻蜓校信”网页端及手机应用仍保留。截止到2月28号，老用户在“班班”网页端登录后先默认进入原“蜻蜓校信”，之后可在“蜻蜓校信”和“班班”之间自由切换。新注册用户在“班班”网页端登录后只进入“班班”。</p>
+                        <p>给您带来的不便敬请谅解！感谢您的支持与关注，我们将一如既往为您提供更好的产品和服务。</p>
+                        <p class="right">深圳蜻蜓互动科技有限公司</p>
+                        <p class="right">2015年2 月28日</p>
+            </div>
+            <div class="enter">
+                <input type='checkbox'  id="isselect" checked="checked"><span>知道了，下次直接进入班班</span>
+                <a href="#" class="btn" id="banban">进入班班</a>
+            </div>
+            <script>
+                var banban = document.getElementById("banban");
+                var isselect = document.getElementById("isselect");
+                banban.onclick = function(e){
+                    if (isselect.checked) {
+                        Cookies.set('select','banban');
+                    }
+                    window.location="http://www.banban.im";
+                }
+                var Cookies ={
+                    //设置cookies
+                    set:function(name,value,days){
+                        if (days) {
+                            var date = new Date();
+                            date.setTime(date.getTime()+(days*24*60*60*1000));
+                            var expires = "; expires="+date.toGMTString();
+                        }
+                        else var expires = "";
+                        document.cookie = name+"="+value+expires+"; path=/";
+                    },
+
+                    //获取cookies
+                    get:function(name){
+                        var nameEQ = name + "=";
+                        var ca = document.cookie.split(';');
+                        for(var i=0;i < ca.length;i++) {
+                            var c = ca[i];
+                            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                        }
+                        return null;
+                    },
+
+                    //清除cookies
+                    erase:function(name){
+                        this.set(name,"",-1);
+                    }
+                }
+                var _istime = Cookies.get('select'); 
+                if(_istime ){  
+                    window.location="http://www.banban.im";
+                }
+            </script>
+        </body>
+</html>

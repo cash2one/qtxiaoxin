@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/** * @authors H君 (qq:262281610)
+* @date    2014-11-11 10:12:51
+* @version 1.0 */
+
+body, div, ul, li, a, img, h1, h2, h3, h4, h5, h6, p, input, table, tr, td ,pre{
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background: #EFEFF4;
+}
+img, input {
+    border: 0;
+    outline: none;
+}
+ul {
+    list-style: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.clear {
+    clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+i {
+    font-style: normal;
+}
+.container {
+    max-width: 640px;
+    margin:0 auto 20px;
+}
+.container img {
+    max-width: 100%;
+}
+.container .header {
+    width: 100%;
+    background: url("/image/api/banner.jpg") no-repeat;
+    background-size: cover;
+    padding: 5% 0;
+}
+.container .header .title{
+    padding: 5px 20px;
+    font-size: 18px;
+    color: #117d72;
+}
+.container .header .title .help{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: url("/image/api/heplIoc.png") no-repeat;
+    background-size: cover;
+    float: right;
+}
+.container .header .qindouCount{
+   padding: 5px 20px;
+    font-size: 18px;
+    color: #117d72;
+}
+.container .header .qindouCount span{
+    display: inline-block;
+    font-size:32px;
+    color: #a6d7d0;
+    padding: 6px 8px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.container .header .qindouCount span.cunt{
+    color: #24c1b1;
+}
+.container .qindouListBox{
+    width: 100%;
+    min-height: 300px;
+}
+.container .qindouListBox li{
+    padding: 15px 10px;
+    margin: 10px;
+    background: #fff;
+    border:1px solid #DADADA;
+    border-radius: 5px;
+    -webkit-box-shadow:   0 0px 0px rgba(0, 0, 0, 0.125);
+    box-shadow:   0 0px 0px rgba(0, 0, 0, 0.125);
+    outline: none;
+}
+.container .qindouListBox li.spirit{
+    border:none;
+    -webkit-box-shadow:   0 0px 0px rgba(0, 0, 0, 0);
+    box-shadow:   0 0px 0px rgba(0, 0, 0, 0);
+}
+.container .qindouListBox li .link a{
+    color: #999999;
+    font-size: 16px;
+}
+.container .qindouListBox li .link a:after{
+    content: "";
+    display: block;
+    float: right;
+    margin: .1em 0 0 .5em;
+    width: 25px;
+    height: 15px;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-image: url("/image/api/aAfter.jpg");
+    background-size: 80%;
+}
+.container .qindouListBox li .link a.up:after{
+    background-image: url("/image/api/upaAfter.jpg");
+}
+.container .qindouListBox li .itemBox{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding: 5px 20px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.container .qindouListBox li .gainBox{
+    background-image: url("/image/api/gainBg.png");
+    color: #ffffff;
+}
+.container .qindouListBox li .expenseBox{
+    background-image: url("/image/api/expenseBg.png");
+    color: #999999;
+}
+.container .qindouListBox li .itemBox span{
+    float: right;
+} 
+.container .qindouListBox li .detailsList{
+    padding: 10px 20px;
+    color: #4c4c4c;
+    font-size: 13px;
+    display: none;
+}
+.container .qindouListBox li .detailsList p{
+    height: 22px;
+    background-image: url("/image/api/lineIco.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: 5%;
+    margin: 5px 0;
+}
+.container .qindouListBox li .detailsList p span{
+    display: inline-block;
+    background-color: #ffffff;
+    padding-right: 10px;
+}
+.container .qindouListBox li .detailsList p span.last{
+    float: right;
+    padding-left: 10px;
+    padding-right: 0;
+}
+.more{
+    text-align: center; padding: 20px;
+}
+.more a{ 
+    display: block;
+    width: 100%;
+    color: #757577; font-size: 17px;
+}
+ 

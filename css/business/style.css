@@ -1,0 +1,25 @@
+body,p,input,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form{margin:0;padding:0;list-style:none;vertical-align:middle}body{background-color:#f9f8f8;font-family: "\5FAE\8F6F\96C5\9ED1","微软雅黑",helvetica,arial;color:#000;-webkit-user-select:none;-webkit-text-size-adjust:none;font-size:17px}header,section,footer,img{display:block;margin:0;padding:0}img{border:0}
+* {margin:0 auto;padding:0;}
+img {border:none;line-height:0;} 
+a img{border-width:0;vertical-align:middle}
+ul,li{border:0;margin:0;padding:0;list-style:none;}
+input[type=text]:focus,input[type=password]:focus,textarea:focus{outline:0}
+input{margin-right:3px;vertical-align:middle}
+label{font-family:Tahoma;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%} 
+textarea{resize:none}
+form{margin:0;padding:0;border:0}
+.clearfix{zoom:1;_height:1px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clear{clear:both;font-size:0;height:0;line-height:0;}
+.fleft{float:left}
+.fright{float:right} 
+.show{display:block}
+.hide{display:none} 
+.layout_div{width: 100%; margin: 0 auto; overflow: hidden;clear: both; background:#fff; text-align:center;}
+.layout_main{width: 980px;margin: 0 auto;overflow: hidden;clear: both;}
+.layout_conrent{width:100%;background:#fff; margin:0 auto;}
+

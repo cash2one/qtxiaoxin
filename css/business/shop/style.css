@@ -1,0 +1,113 @@
+body {font:0.95em Microsoft YaHei, Arial, Helvetica, sans-serif;margin:0 auto;padding:0; width: 100%; height: 100%;}
+* {margin:0 auto;padding:0; }
+img {border:none;line-height:0;padding:0; margin: 0;}
+a {text-decoration:none;color:#000;cursor:pointer}
+a:link{color:#37a;text-decoration:none;outline:0;}
+a:visited{color:#669;text-decoration:none}
+a:hover{color:#333;text-decoration:none;background:#fff}
+a:active{color:#333;text-decoration:none;background:#fff}
+a img{border-width:0;vertical-align:middle}
+ul,li{border:0;margin:0;padding:0;list-style:none;}
+input[type=text]:focus,input[type=password]:focus,textarea:focus{outline:0}
+input{margin-right:3px;vertical-align:middle}
+label{font-family:Tahoma;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%} 
+textarea{resize:none}
+form{margin:0;padding:0;border:0}
+.clearfix{zoom:1;_height:1px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clear{clear:both;font-size:0;height:0;line-height:0;}
+.fleft{float:left}
+.fright{float:right}
+.ll{float:left}
+.rr{float:right}
+.hidden{display:none}
+.show{display:block}
+.hide{display:none}
+.layout_div{width: 100%; margin: 0 auto; overflow: hidden;clear: both; background:#fff; text-align:center;}
+.layout_main{width: 980px;margin: 0 auto;overflow: hidden;clear: both;}
+.layout_content{width:100%;background:#ebebeb; margin:0 auto;}
+a.btn{ 
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 10px;
+	margin-bottom: 0;
+	font-size: 1.2em;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;  
+} 
+a.btn-r{background-color: #f69400; border-color: #eea236; color: #fff;}
+a.btn-l{background-color: #d6d6d6;border-color: #f8f8f8; color: #999999;}
+a.btn-s{background-color: #5bafec; border-color: #abd6f5; color: #fff;}
+a.btn:hover{ opacity: 0.8; }
+.box{ padding: 10px; overflow: hidden;}
+.douInfo{ font-size: 1.1em; color:#fd9501; margin-right: 5px; line-height: 30px; background: url('/images/shop/dou_ioc.png') left center no-repeat; padding:10px 0 10px 35px;}
+#content{ width: 100%;  margin: 0 auto; overflow: hidden; }
+#content .userInfo{ background: #fff; }
+#content .userInfo .pic{ width: 15%; display: inline-block; }
+#content .userInfo img{ width: 100%; border-radius: 6px; vertical-align: middle;}
+#content .userInfo .info{ width: 35%; display: inline-block; margin-left: 5px; vertical-align: middle; }
+#content .userInfo .usName{ font-size: 1.1em; color: #333333; }
+#content .userInfo .usDou{ font-size: 0.95em; color: #666666; }
+#content .userInfo .usDou strong{ font-size: 20px; color: #de1c03; padding: 0 5px; }
+#content .userInfo a {color: #fff; float: right; }
+#content .userInfo a:hover{ background-color: #f69455; color: #fff;}
+#content .header{ width: 100%; height: 69px; background: url(/images/shop/header_bg.jpg) center repeat-x;}
+#content .title{ font-weight: 700; padding: 5px 15px; margin: 10px 0;  font-size: 1.2em; color: #333333; background: url(/images/shop/dot_ioc.png) 5px center no-repeat;}
+#content .titleBorder{border-bottom: 1px solid #e1dfdf;}
+#content .goodsShelf { padding-top: 0px;} 
+#content .goodsShelf .shopList{ display: inline-block; overflow: hidden;}
+#content .goodsShelf .shopList li{ display: inline-block; background: #fff; width:46%; margin: 5px; float: left; }
+#content .goodsShelf .shopList li img{ width:100%; }
+#content .goodsShelf .shopList li div.info{ padding: 10px 5px; line-height: 25px; }
+#content .goodsShelf .shopList li div.info h3{font-size: 1.0em; color: #333333; font-weight: 700;}
+#content .goodsShelf .shopList li div.info p{ font-size: 0.95em; color: #777777;}
+#content .goodsShelf .shopList li div.info p span{ font-size: 1.1em; color: #fd9501; margin-right: 10px; }
+#content .serveUS {padding-top: 0px; }
+#content .serveUS .process{ background: #fff;}
+#content .serveUS .processBox{ width: 100%; display: inline-block; overflow: hidden; text-align: center; margin: 0 auto;  background: #fff;}
+#content .serveUS .processBox li{ display: inline-block; width: 22%; text-align: center; line-height: 23px; vertical-align: middle;}
+#content .serveUS .processBox li img{width: 100%; }
+#content .serveUS .processBox li.arrow{width: 9%;}
+#content .serveUS .processBox li div.arrowhead{ background: url(/images/shop/arrowhead_ioc.png) top no-repeat; width:100%;  height: 70px;  }
+#content .serveUS .processBox li h3{text-align: center;  font-size: 1.0em; color: #333333; font-weight: 700;}
+#content .serveUS .processBox li p{ text-align: center;  font-size: 0.95em; color: #777777; } 
+/*宝贝详情*/
+#content .goodsInfo{padding-top: 0px;} 
+#content .goodsInfo .contBox{ background: #fff;}
+#content .goodsInfo .title{ margin-bottom: 0;  }
+#content .goodsInfo img{width: 100%; }
+#content .goodsInfo .validTime{ color: #777777; font-size: 1.0em; padding: 10px 5px; border-bottom: 1px solid #e1dfdf;}
+#content .goodsInfo .deal{width: 100%;padding: 10px 0; }
+#content .goodsInfo .douBoxL{ width:49%; font-size: 1.0em;} 
+#content .goodsInfo .douBoxR{ width:50%; text-align: right;}
+#content .dealProces{ padding-top:0; padding-bottom:0; }
+#content .dealProces .listBox{ font-size: 1.0em; padding: 10px 5px 15px 5px; border-bottom: 1px solid #e1dfdf; color: #777777;}
+#content .dealRemind{ padding-top:0;  }
+#content .remindInfo{ font-size: 1.0em; color: #777777; padding: 0px 10px;}
+/*任务列表*/
+#content .taskTistBox{ background: #fff; padding-top: 0; }
+#content .taskTistBox ul{}
+#content .taskTistBox ul li{ border-bottom: 1px solid #e1dfdf; }
+#content .taskTistBox ul li { padding-bottom: 15px;}
+#content .taskTistBox ul li .taskBox{display: inline-block; }
+#content .taskTistBox ul li .taskL{ width: 48%; font-size: 1.0em;}
+#content .taskTistBox ul li .taskL span.douInfo{font-weight: 700;}
+#content .taskTistBox ul li .taskR{  width: 46%; text-align: right;}
+
+

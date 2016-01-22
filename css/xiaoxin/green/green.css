@@ -1,0 +1,41 @@
+/* 
+    color:read;  
+    Created on : 2014-8-22, 10:24:33
+    Author     : owen
+*/
+.infoTitle{ color: #e95b5f;}
+.btn-raed {color: #ffffff; background-color: #29a38d; border-color: #cccccc; }
+.btn-raed:hover, .btn-raed:focus {color: #ffffff; background-color: #28b38d; text-decoration: none; background-position: 0 -15px;-webkit-transition: background-position .1s linear; }
+
+.layoutBodyBox{ background-color: #f9f9f7; }
+.subnavBox{ background: #29a38d; } 
+.borderBottom{border-bottom: 1px solid #35bfaf;}
+.borderTop{border-top:1px solid #147554;} 
+
+.menuList li a{color: #e0eeeb;}
+.menuList li a:hover{ background-color: #ffffff; color: #29a38d; }
+.menuList li a.focus{ background-color: #ffffff; color: #29a38d;}
+.menuList li a em{background:url('/image/xiaoxin/muen_navicoP.png');}
+.menuList li a i{background:url('/image/xiaoxin/muen_list_ico.png');}
+.headNav li a { color: #999999; }
+.headNav li a.focus{border-bottom: 3px solid #29a38d;  }
+.headNav li a:hover{border-bottom: 3px solid #29a38d; }
+
+.userInfo a{color: #e0eeeb; }
+.userInfo a.focus{color: #e0eeeb;}
+.userInfo a:hover{color: #29a38d; }
+
+.classTableBox .classInfoTitle{ color: #29a38d;}
+
+//文件上传按钮背景图片
+.uploadify-button{
+    background: url('/image/xiaoxin/feilBtnBgP.jpg') center;
+}
+.uploadify:hover .uploadify-button{
+     width: 100px;
+     height: 30px;
+     background: url('/image/xiaoxin/feilBtnBgP.jpg') center;
+     opacity: 0.8;
+}
+
+
